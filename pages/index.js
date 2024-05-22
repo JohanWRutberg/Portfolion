@@ -27,9 +27,9 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h1 bg-white/20 backdrop-blur-sm auto rounded-3xl p-4"
+            className="h1 max-W-sm xl:max-w-2xl mx-auto xl:mx-0 mb-10 xl:mb-16 bg-white/10 backdrop-blur-sm auto rounded-3xl p-4"
           >
-            Förvandla idéer <br /> till <span className="text-accent">Digitala Lösningar</span>!
+            Förvandla idéer till <span className="text-accent">Digitala Lösningar</span>
           </motion.h1>
           {/* subtitle */}
           <motion.p
@@ -37,10 +37,10 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-W-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 bg-white/20 backdrop-blur-sm auto rounded-3xl p-4"
+            className="max-W-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 bg-white/10 backdrop-blur-sm auto rounded-3xl p-4"
           >
-            Juniorutvecklare med både frontend- och backendkunskaper. Välkommen till min portfolio, där du kan utforska
-            mina projekt och se hur jag kan hjälpa dig att förvandla dina visioner till verklighet.
+            Nyutexaminerad Juniorutvecklare med både frontend och backendkunskaper. Här du kan utforska mina projekt och
+            se hur jag kan hjälpa dig att förvandla dina visioner till verklighet.
           </motion.p>
           {/* Btn */}
           <div className="flex justify-center xl:hidden relative">
