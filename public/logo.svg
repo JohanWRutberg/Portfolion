@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1125" height="142" viewBox="0 0 1125 142">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 140px;
+        fill: #fff;
+        font-family: Corbel;
+      }
+
+      .cls-1, .cls-4 {
+        text-transform: uppercase;
+      }
+
+      .cls-2 {
+        font-weight: 300;
+      }
+
+      .cls-3 {
+        fill: red;
+        font-family: "Copperplate Gothic Light";
+        font-size: 180px;
+      }
+
+      .cls-4 {
+        font-size: 12px;
+        font-family: "Myriad Pro";
+      }
+    </style>
+  </defs>
+  <text id="Johan_Rutberg_." data-name="Johan Rutberg ." class="cls-1" x="20" y="121">Johan <tspan class="cls-2">Rutberg </tspan><tspan class="cls-3">.</tspan></text>
+  <text id="Lorem_Ipsum" data-name="Lorem Ipsum" class="cls-4" x="328.001" y="-199">Lorem Ipsum</text>
+</svg>
