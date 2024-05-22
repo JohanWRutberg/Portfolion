@@ -5,6 +5,8 @@ import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaVuejs } from "react-icons/fa
 
 import { SiNextdotjs, SiNodedotjs, SiFramer, SiAdobexd, SiAdobephotoshop } from "react-icons/si";
 
+import { TbBrandFramerMotion } from "react-icons/tb";
+
 //  data
 const aboutData = [
   {
@@ -20,7 +22,8 @@ const aboutData = [
           <SiNextdotjs />,
           <SiFramer />,
           <FaVuejs />,
-          <SiNodedotjs />
+          <SiNodedotjs />,
+          <TbBrandFramerMotion />
         ]
       },
       {
@@ -46,19 +49,27 @@ const aboutData = [
     title: "erfarenhet",
     info: [
       {
-        title: "Surveillance Analyst",
-        stage: "2024 -"
+        title: "Fullstack utvecklare, Optimental (praktik)",
+        stage: "2024 - Idag"
       },
       {
-        title: "Surveillance Team Manager",
+        title: "Surveillance Analyst, Casino Cosmopol, SvS",
+        stage: "2024 - Idag"
+      },
+      {
+        title: "Frontend utvecklare, Bildhistoria (praktik)",
+        stage: "2023 - 2023"
+      },
+      {
+        title: "Surveillance Team Manager, Casino Cosmopol, SvS",
         stage: "2019 - 2020"
       },
       {
-        title: "Surveillance Officer",
+        title: "Surveillance Officer, Casino Cosmopol, SvS",
         stage: "2003 - 2019"
       },
       {
-        title: "Testingenjör",
+        title: "Testingenjör, Validation",
         stage: "2000 - 2001"
       }
     ]
@@ -67,11 +78,11 @@ const aboutData = [
     title: "Utbildningar",
     info: [
       {
-        title: "Webbutveckling (JS) - IT-Högskolan, Stockholm, Sverige",
+        title: "JavaScript utveckling - IT-Högskolan, Stockholm, Sverige",
         stage: "2022 - 2024"
       },
       {
-        title: "Systemprogrammering - Telit, Nynäshamn, Sverige",
+        title: "Systemprogrammering - TeliT, Nynäshamn, Sverige",
         stage: "1998 - 2000"
       }
     ]
@@ -118,10 +129,12 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            Juniorutvecklare med både frontend- och backendkunskaper. Med passion för att skapa intuitiva och effektiva
-            digitala lösningar, är jag redo att hjälpa dig att förverkliga dina idéer. Oavsett om det handlar om att
-            bygga responsiva webbplatser, utveckla dynamiska webbapplikationer eller optimera användarupplevelsen, kan
-            jag bidra med den tekniska expertis och kreativitet som behövs för att ta ditt projekt till nästa nivå.
+            Juniorutvecklare med både <span className="text-white font-semibold">Frontend</span> och{" "}
+            <span className="text-accent font-semibold">Backend</span> kunskaper. Med passion för att skapa intuitiva
+            och effektiva digitala lösningar, är jag redo att hjälpa dig att förverkliga dina idéer. Oavsett om det
+            handlar om att bygga responsiva webbplatser, utveckla dynamiska webbapplikationer eller optimera
+            användarupplevelsen, kan jag bidra med den tekniska expertis och kreativitet som behövs för att ta ditt
+            projekt till nästa nivå.
           </motion.p>
           {/* counters */}
           <motion.div
@@ -201,9 +214,9 @@ const About = () => {
                 items-center text-white/60"
                 >
                   {/* title */}
-                  <div className="font-light mb-2 md:mb-0">{item.title}</div>
-                  <div className="hidden md:flex">-</div>
-                  <div>{item.stage}</div>
+                  <div className="font-light mb-2 md:mb-0">{item.stage}</div>
+                  <div className="hidden md:flex">•</div>
+                  <div>{item.title}</div>
                   <div className="flex gap-x-4">
                     {/* icons */}
                     {item.icons?.map((icon, itemIndex) => {

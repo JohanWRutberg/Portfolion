@@ -39,8 +39,8 @@ const Home = () => {
             exit="hidden"
             className="max-W-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 bg-white/10 backdrop-blur-sm auto rounded-3xl p-4"
           >
-            Nyutexaminerad Juniorutvecklare med både frontend och backendkunskaper. Här du kan utforska mina projekt och
-            se hur jag kan hjälpa dig att förvandla dina visioner till verklighet.
+            Nyutexaminerad Juniorutvecklare inom <span className="text-white font-semibold">Javascript</span>. Här du
+            kan utforska mina projekt och se hur jag kan hjälpa dig att förvandla dina visioner till verklighet.
           </motion.p>
           {/* Btn */}
           <div className="flex justify-center xl:hidden relative">
