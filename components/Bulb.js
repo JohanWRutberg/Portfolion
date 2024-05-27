@@ -4,10 +4,10 @@ import Image from "next/image";
 const Bulb = () => {
   return (
     <div
-      className="absolute -left-36 -bottom-12 rotate-12 mix-blend-color-dodge
-    animate-pulse duration-75 z-10 w-[200px] xl:w-[260px]"
+      className="absolute -left-16 -bottom-6 rotate-0 mix-blend-color-dodge
+    animate-pulse duration-75 z-10 w-[200px] xl:w-[350px]"
     >
-      <Image src={"/bulb.png"} width={260} height={200} className="w-full h-full" alt="" />
+      <Image src={"/AdobeStock_582085122up.png"} width={260} height={200} className="w-full h-full" alt="" />
     </div>
   );
 };

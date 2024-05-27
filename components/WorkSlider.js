@@ -25,19 +25,19 @@ export const workSlider = {
       images: [
         {
           title: "title",
-          path: "/thumb4.jpg"
+          path: "/002.jpg"
         },
         {
           title: "title",
-          path: "/thumb1.jpg"
+          path: "/002.jpg"
         },
         {
           title: "title",
-          path: "/thumb2.jpg"
+          path: "/002.jpg"
         },
         {
           title: "title",
-          path: "/thumb3.jpg"
+          path: "/002.jpg"
         }
       ]
     }
