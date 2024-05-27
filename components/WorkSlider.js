@@ -17,7 +17,7 @@ export const workSlider = {
         },
         {
           title: "title",
-          path: "/002.jpg"
+          path: "/004.jpg"
         }
       ]
     },
