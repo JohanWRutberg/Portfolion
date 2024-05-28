@@ -105,7 +105,7 @@ const About = () => {
   /* console.log(index); */
   return (
     <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
-      <Circles />
+      {/*  <Circles /> */}
       {/* avatar img */}
       <motion.div
         variants={fadeIn("right", 0.2)}
