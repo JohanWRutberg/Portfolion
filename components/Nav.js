@@ -56,7 +56,7 @@ const Nav = () => {
               <div className="absolute pr-14 right-0 hidden xl:group-hover:flex z-50">
                 <div
                   className="bg-white relative flex text-primary items-center
-                p-[6px] rounded-[3px] z-50"
+                p-[6px] rounded-[3px] z-40"
                 >
                   <div className="text-[12px] leading-none font-semibold capitalize">{link.name}</div>
                   {/* triangle */}
