@@ -1,23 +1,26 @@
-// work slider data
 export const workSlider = {
   slides: [
     {
       images: [
         {
           title: "title",
-          path: "/001.jpg"
+          path: "/001.jpg",
+          link: "https://github.com/JohanWRutberg/optimental2c"
         },
         {
           title: "title",
-          path: "/002.jpg"
+          path: "/002.jpg",
+          link: "https://github.com/JohanWRutberg/dronepilot"
         },
         {
           title: "title",
-          path: "/003.jpg"
+          path: "/003.jpg",
+          link: "https://github.com/JohanWRutberg/portfolio"
         },
         {
           title: "title",
-          path: "/004.jpg"
+          path: "/004.jpg",
+          link: "https://github.com/JohanWRutberg/chatgpt"
         }
       ]
     },
@@ -25,19 +28,23 @@ export const workSlider = {
       images: [
         {
           title: "title",
-          path: "/002.jpg"
+          path: "/002.jpg",
+          link: "https://example.com/link1"
         },
         {
           title: "title",
-          path: "/002.jpg"
+          path: "/002.jpg",
+          link: "https://example.com/link2"
         },
         {
           title: "title",
-          path: "/002.jpg"
+          path: "/002.jpg",
+          link: "https://example.com/link3"
         },
         {
           title: "title",
-          path: "/002.jpg"
+          path: "/002.jpg",
+          link: "https://example.com/link4"
         }
       ]
     }
@@ -71,61 +78,68 @@ const WorkSlider = () => {
       modules={[Pagination]}
       className="h-[280px] sm:h-[480px]"
     >
-      {workSlider.slides.map((slide, index) => {
-        return (
-          <SwiperSlide key={index}>
-            <div className="grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer">
-              {slide.images.map((image, index) => {
-                return (
-                  <div
-                    className="relative rounded-lg overflow-hidden flex
-                  items-center justify-center group"
-                    key={index}
+      {workSlider.slides.map((slide, slideIndex) => (
+        <SwiperSlide key={slideIndex}>
+          <div className="grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer">
+            {slide.images.map((image, imageIndex) => (
+              <div
+                className="relative rounded-lg overflow-hidden flex items-center justify-center group"
+                key={imageIndex}
+              >
+                {/* Wrap image and overlay with anchor tag if link exists */}
+                {image.link ? (
+                  <a
+                    href={image.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block relative w-full h-full"
                   >
-                    <div
-                      className="flex items-center justify-center relative
-                    overflow-hidden group"
-                    >
-                      {/* image */}
-                      <Image src={image.path} width={500} height={300} alt="" />
-                      {/* overlay gradient */}
-                      <div
-                        className="absolute inset-0 bg-gradient-to-l from-transparent
-                      via-[#e838cc] to-[#4a22bd] opacity-0 group-hover:opacity-80 transition-all duration-700"
-                      ></div>
-                      {/* title */}
-                      <div
-                        className="absolute bottom-0 translate-y-full
-                        group-hover:-translate-y-10 group-hover:xl:-translate-y-20
-                        transition-all duration-300"
-                      >
-                        <div className="flex items-center gap-x-2 text-[13px] tracking-[0.2em]">
-                          {/* title part 1 */}
-                          <div className="delay-100">PÅGÅENDE</div>
-                          {/* title part 2 */}
-                          <div
-                            className="translate-y-[500%] group-hover:translate-y-0
-                          transition-all duration-300 delay-150"
-                          >
-                            PROJEKT
-                          </div>
-                          {/* icon */}
-                          <div
-                            className="text-xl translate-y-[500%] group-hover:translate-y-0
-                          transition-all duration-300 delay-200"
-                          >
-                            <BsArrowRight />
-                          </div>
+                    <Image src={image.path} layout="responsive" width={500} height={300} alt={image.title} />
+                    {/* overlay gradient */}
+                    <div className="absolute inset-0 bg-gradient-to-l from-[#2c2a2b] to-[#bfbdc3] opacity-0 group-hover:opacity-80 transition-all duration-700"></div>
+                    {/* title */}
+                    <div className="absolute inset-0 flex items-center justify-center translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20 transition-all duration-300">
+                      <div className="flex items-center justify-center gap-x-2 text-[13px] tracking-[0.2em]">
+                        {/* title part 1 */}
+                        <div className="delay-100">PÅGÅENDE</div>
+                        {/* title part 2 */}
+                        <div className="translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150">
+                          PROJEKT
+                        </div>
+                        {/* icon */}
+                        <div className="text-xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-200">
+                          <BsArrowRight />
                         </div>
                       </div>
                     </div>
-                  </div>
-                );
-              })}
-            </div>
-          </SwiperSlide>
-        );
-      })}
+                  </a>
+                ) : (
+                  <>
+                    <Image src={image.path} layout="responsive" width={500} height={300} alt={image.title} />
+                    {/* overlay gradient */}
+                    <div className="absolute inset-0 bg-gradient-to-l from-[#2c2a2b] to-[#bfbdc3] opacity-0 group-hover:opacity-80 transition-all duration-700"></div>
+                    {/* title */}
+                    <div className="absolute inset-0 flex items-center justify-center translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20 transition-all duration-300">
+                      <div className="flex items-center justify-center gap-x-2 text-[13px] tracking-[0.2em]">
+                        {/* title part 1 */}
+                        <div className="delay-100">PÅGÅENDE</div>
+                        {/* title part 2 */}
+                        <div className="translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150">
+                          PROJEKT
+                        </div>
+                        {/* icon */}
+                        <div className="text-xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-200">
+                          <BsArrowRight />
+                        </div>
+                      </div>
+                    </div>
+                  </>
+                )}
+              </div>
+            ))}
+          </div>
+        </SwiperSlide>
+      ))}
     </Swiper>
   );
 };
