@@ -4,6 +4,7 @@ import Bulb from "../../components/Bulb";
 import { BsArrowRight } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
+import ParticlesContainer from "../../components/ParticlesContainer";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -48,6 +49,7 @@ const Contact = () => {
         className="container mx-auto py-32 text-center xl:text-left flex
         items-center justify-center h-full"
       >
+        <ParticlesContainer />
         <div className="flex flex-col w-full max-w-[700px]">
           <motion.h2
             variants={fadeIn("up", 0.2)}
@@ -73,7 +75,7 @@ const Contact = () => {
                 placeholder="namn"
                 value={formData.namn}
                 onChange={handleChange}
-                className="input"
+                className="input bg-white/10 backdrop-blur-sm"
               />
               <input
                 type="email"
@@ -81,7 +83,7 @@ const Contact = () => {
                 placeholder="e-post"
                 value={formData.email}
                 onChange={handleChange}
-                className="input"
+                className="input bg-white/10 backdrop-blur-sm"
               />
             </div>
             <input
@@ -90,14 +92,14 @@ const Contact = () => {
               placeholder="ämne"
               value={formData.amne}
               onChange={handleChange}
-              className="input"
+              className="input bg-white/10 backdrop-blur-sm"
             />
             <textarea
               name="meddelande"
               placeholder="meddelande"
               value={formData.meddelande}
               onChange={handleChange}
-              className="textarea"
+              className="textarea bg-white/10 backdrop-blur-sm"
             ></textarea>
             <button
               type="submit"
