@@ -102,7 +102,7 @@ const About = () => {
   const [index, setIndex] = useState(0);
   /* console.log(index); */
   return (
-    <div className="h-full bg-primary/30 py-40 text-center xl:text-left">
+    <div className="h-full bg-primary/30 py-32 mb-60 text-center xl:text-left">
       {/*  <Circles /> */}
       {/* avatar img */}
       <motion.div
