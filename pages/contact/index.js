@@ -21,6 +21,10 @@ const Contact = () => {
     });
   };
 
+  const isFormValid = () => {
+    return Object.values(formData).every((field) => field.trim() !== "");
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     const response = await fetch("/api/send-email", {
@@ -103,9 +107,10 @@ const Contact = () => {
             ></textarea>
             <button
               type="submit"
-              className="btn rounded-full border border-white/50 max-w-[170px]
+              disabled={!isFormValid()}
+              className={`btn rounded-full border border-white/50 max-w-[170px]
               px-8 transition-all duration-300 flex items-center justify-center
-              overflow-hidden hover:border-accent group"
+              overflow-hidden hover:border-accent group z-50 ${!isFormValid() && "opacity-50 cursor-not-allowed"}`}
             >
               <span
                 className="group-hover:-translate-y-[120%] group-hover:opacity-0
@@ -122,7 +127,6 @@ const Contact = () => {
           </motion.form>
         </div>
       </div>
-      {/* <Bulb /> */}
     </div>
   );
 };
