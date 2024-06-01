@@ -1,4 +1,14 @@
 import React, { useState } from "react";
+// components
+import Avatar from "../../components/Avatar";
+import Circles from "../../components/Circles";
+
+// framer motion
+import { motion } from "framer-motion";
+import { fadeIn } from "../../variants";
+
+// counters
+import CountUp from "react-countup";
 
 // icons
 import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaVuejs } from "react-icons/fa";
@@ -13,7 +23,7 @@ const aboutData = [
     title: "färdigheter",
     info: [
       {
-        title: "Webbutveckling",
+        title: "Webbutv.",
         icons: [
           <FaHtml5 />,
           <FaCss3 />,
@@ -27,7 +37,7 @@ const aboutData = [
         ]
       },
       {
-        title: "UX/UI Design",
+        title: "UX / UI",
         icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />]
       }
     ]
@@ -75,7 +85,7 @@ const aboutData = [
     ]
   },
   {
-    title: "Utbildningar",
+    title: "Utbildning",
     info: [
       {
         title: "JavaScript utveckling - IT-Högskolan, Stockholm, Sverige",
@@ -88,17 +98,6 @@ const aboutData = [
     ]
   }
 ];
-
-// components
-import Avatar from "../../components/Avatar";
-import Circles from "../../components/Circles";
-
-// framer motion
-import { motion } from "framer-motion";
-import { fadeIn } from "../../variants";
-
-// counters
-import CountUp from "react-countup";
 
 const About = () => {
   const [index, setIndex] = useState(0);
@@ -116,7 +115,7 @@ const About = () => {
       >
         <Avatar />
       </motion.div>
-      <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
+      <div className="container mb-40 mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
         {/* text */}
         <div className="flex-1 flex flex-col justify-center">
           <motion.h2 variants={fadeIn("right", 0.2)} initial="hidden" animate="show" exit="hidden" className="h2">
@@ -187,7 +186,7 @@ const About = () => {
         </div>
         {/* info */}
         <div className="flex flex-col w-full xl:max-w-[56%] h-[480px]">
-          <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
+          <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-8">
             {aboutData.map((item, itemIndex) => {
               return (
                 <div
@@ -205,7 +204,7 @@ const About = () => {
               );
             })}
           </div>
-          <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
+          <div className="py-2 mb-40 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
             {aboutData[index].info.map((item, itemIndex) => {
               return (
                 <div
