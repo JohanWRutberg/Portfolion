@@ -115,7 +115,7 @@ const About = () => {
       >
         <Avatar />
       </motion.div>
-      <div className="container mx-auto mt-52 h-full flex flex-col items-center xl:flex-row gap-x-6">
+      <div className="container mx-auto mt-10 h-full flex flex-col items-center xl:flex-row gap-x-6">
         {/* text */}
         <div className="flex-1 flex flex-col justify-center">
           <motion.h2 variants={fadeIn("right", 0.2)} initial="hidden" animate="show" exit="hidden" className="h2">
@@ -185,7 +185,7 @@ const About = () => {
           </motion.div>
         </div>
         {/* info */}
-        <div className="flex flex-col mb-40 w-full xl:max-w-[56%] h-[480px]">
+        <div className="flex flex-col w-full xl:max-w-[56%] h-[480px]">
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-8">
             {aboutData.map((item, itemIndex) => {
               return (
