@@ -43,7 +43,7 @@ const Home = () => {
             kan utforska mina projekt och se hur jag kan hjälpa dig att förvandla dina visioner till verklighet.
           </motion.p>
           {/* Btn */}
-          <div className="flex justify-center xl:hidden relative">
+          <div className="flex justify-center xl:hidden relative mb-40">
             <ProjectsBtn />
           </div>
           <motion.div
