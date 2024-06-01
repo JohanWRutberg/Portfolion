@@ -27,7 +27,7 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h1 mt-28 lg:mt-0 max-W-sm xl:max-w-2xl mx-auto xl:mx-0 mb-10 xl:mb-16 bg-white/10 backdrop-blur-sm auto rounded-3xl p-4"
+            className="h1 mt-52 lg:mt-0 max-w-sm xl:max-w-2xl mx-auto xl:mx-0 mb-10 xl:mb-16 bg-white/10 backdrop-blur-sm auto rounded-3xl p-4"
           >
             Förvandla idéer till <span className="text-accent">Digitala Lösningar</span>
           </motion.h1>
