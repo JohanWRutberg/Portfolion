@@ -18,7 +18,7 @@ const Home = () => {
       {/* text */}
       <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
         <div
-          className="text-center flex flex-col justify-center pt-60 md:pt-48 xl:pt-40 xl:text-left xl:ml-24
+          className="text-center flex flex-col justify-center pt-64 md:pt-48 xl:pt-40 xl:text-left xl:ml-24
         h-full container mx-auto"
         >
           {/* title */}
@@ -43,7 +43,7 @@ const Home = () => {
             kan utforska mina projekt och se hur jag kan hjälpa dig att förvandla dina visioner till verklighet.
           </motion.p>
           {/* Btn */}
-          <div className="flex justify-center xl:hidden relative mb-40">
+          <div className="flex justify-center xl:hidden relative pb-48">
             <ProjectsBtn />
           </div>
           <motion.div
