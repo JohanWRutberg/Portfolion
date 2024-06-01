@@ -59,7 +59,7 @@ const aboutData = [
     info: [
       {
         title: "Fullstack utvecklare, Optimental (praktik)",
-        stage: "2024 - Idag"
+        stage: "2024 - 2024"
       },
       {
         title: "Surveillance Analyst, Casino Cosmopol, SvS",
@@ -75,7 +75,7 @@ const aboutData = [
       },
       {
         title: "Surveillance Officer, Casino Cosmopol, SvS",
-        stage: "2003 - 2019"
+        stage: "2003 - 2024"
       },
       {
         title: "Testingenjör, Validation",
