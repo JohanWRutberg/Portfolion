@@ -9,7 +9,6 @@ import { fadeIn } from "../../variants";
 
 // counters
 import CountUp from "react-countup";
-
 // icons
 import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaVuejs } from "react-icons/fa";
 
@@ -115,7 +114,7 @@ const About = () => {
       >
         <Avatar />
       </motion.div>
-      <div className="container mx-auto mt-10 h-full flex flex-col items-center xl:flex-row gap-x-6">
+      <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
         {/* text */}
         <div className="flex-1 flex flex-col justify-center">
           <motion.h2 variants={fadeIn("right", 0.2)} initial="hidden" animate="show" exit="hidden" className="h2">
@@ -186,7 +185,7 @@ const About = () => {
         </div>
         {/* info */}
         <div className="flex flex-col w-full xl:max-w-[56%] h-[480px]">
-          <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-8">
+          <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
             {aboutData.map((item, itemIndex) => {
               return (
                 <div
@@ -204,7 +203,7 @@ const About = () => {
               );
             })}
           </div>
-          <div className="py-2 mb-40 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
+          <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
             {aboutData[index].info.map((item, itemIndex) => {
               return (
                 <div
