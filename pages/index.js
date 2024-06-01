@@ -18,7 +18,7 @@ const Home = () => {
       {/* text */}
       <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
         <div
-          className="text-center flex flex-col justify-center pt-64 md:pt-48 xl:pt-40 xl:text-left xl:ml-24
+          className="text-center flex flex-col justify-center pt-72 md:pt-48 xl:pt-40 xl:text-left xl:ml-24
         h-full container mx-auto"
         >
           {/* title */}
