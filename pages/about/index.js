@@ -114,7 +114,7 @@ const About = () => {
       >
         <Avatar />
       </motion.div>
-      <div className="container pb-40 mx-auto h-100vh flex flex-col items-center xl:flex-row gap-x-6">
+      <div className="container pb-40 mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
         {/* text */}
         <div className="flex-1 flex flex-col justify-center">
           <motion.h2 variants={fadeIn("right", 0.2)} initial="hidden" animate="show" exit="hidden" className="h2">

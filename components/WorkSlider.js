@@ -10,7 +10,7 @@ export const workSlider = {
         {
           title: "title",
           path: "/002.jpg",
-          link: "https://github.com/JohanWRutberg/dronepilot"
+          link: "https://www.xn--drnarpiloten-5ib.com/"
         },
         {
           title: "title",
