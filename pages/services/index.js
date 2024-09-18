@@ -31,7 +31,7 @@ const Services = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Jag hjälper dig att forma en helhetslösning till din webbsida. Från enklare lösningar till lite mer
+              Jag hjälper dig att forma en helhetslösning till din webbsida. Från enklare projekt till lite mer
               avancerade.
             </motion.p>
           </div>
