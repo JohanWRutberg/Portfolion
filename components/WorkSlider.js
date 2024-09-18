@@ -9,8 +9,8 @@ export const workSlider = {
         },
         {
           title: "title",
-          path: "/002.jpg",
-          link: "https://www.xn--drnarpiloten-5ib.com/"
+          path: "/thumb2a.jpg",
+          link: "https://www.beatmastermind.com/"
         },
         {
           title: "title",
@@ -28,23 +28,23 @@ export const workSlider = {
       images: [
         {
           title: "title",
-          path: "/002.jpg",
-          link: "https://example.com/link1"
+          path: "/thumb2a.jpg",
+          link: "https://www.beatmastermind.com/"
         },
         {
           title: "title",
-          path: "/002.jpg",
-          link: "https://example.com/link2"
+          path: "/thumb2a.jpg",
+          link: "https://www.beatmastermind.com/"
         },
         {
           title: "title",
-          path: "/002.jpg",
-          link: "https://example.com/link3"
+          path: "/thumb2a.jpg",
+          link: "https://www.beatmastermind.com/"
         },
         {
           title: "title",
-          path: "/002.jpg",
-          link: "https://example.com/link4"
+          path: "/thumb2a.jpg",
+          link: "https://www.beatmastermind.com/"
         }
       ]
     }
