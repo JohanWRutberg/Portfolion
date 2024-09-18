@@ -4,7 +4,7 @@ export const workSlider = {
       images: [
         {
           title: "title",
-          path: "/001.jpg",
+          path: "/thumb1.jpg",
           link: "https://github.com/JohanWRutberg/optimental2c"
         },
         {
@@ -14,12 +14,12 @@ export const workSlider = {
         },
         {
           title: "title",
-          path: "/thumb3.jpg",
-          link: "https://github.com/JohanWRutberg/portfolio"
+          path: "/thumb3a.jpg",
+          link: "https://www.drönarpiloten.com"
         },
         {
           title: "title",
-          path: "/004.jpg",
+          path: "/thumb4.jpg",
           link: "https://github.com/JohanWRutberg/chatgpt"
         }
       ]
