@@ -29,7 +29,7 @@ const Home = () => {
             exit="hidden"
             className="h1 max-w-sm md:max-w-2xl xl:max-w-2xl mx-auto xl:mx-0 mb-10 xl:mb-16 bg-white/10 backdrop-blur-sm auto rounded-3xl p-4"
           >
-            Förvandla idéer till <span className="text-accent">Digitala Lösningar</span>
+            Förvandlar idéer till <span className="text-accent">Digitala Lösningar</span>
           </motion.h1>
           {/* subtitle */}
           <motion.p
@@ -39,8 +39,8 @@ const Home = () => {
             exit="hidden"
             className="max-W-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 bg-white/10 backdrop-blur-sm auto rounded-3xl p-4"
           >
-            Nyutexaminerad Juniorutvecklare inom <span className="text-white font-semibold">Javascript</span>. Här du
-            kan utforska mina projekt och se hur jag kan hjälpa dig att förvandla dina visioner till verklighet.
+            Juniorutvecklare inom <span className="text-white font-semibold">Javascript</span>. Här du kan utforska mina
+            projekt och se hur jag kan hjälpa dig att förvandla dina visioner till verklighet.
           </motion.p>
           {/* Btn */}
           <div className="flex justify-center xl:hidden relative pb-48">

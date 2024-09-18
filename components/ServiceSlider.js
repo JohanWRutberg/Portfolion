@@ -26,17 +26,17 @@ const serviceData = [
   {
     icon: <RxCrop />,
     title: "Varumärke",
-    description: "Jag kan hjälpa dig med ditt varumärke och din logotyp."
+    description: "Jag kan skapa logotyper anpassat för ändamålet."
   },
   {
     icon: <RxPencil2 />,
     title: "Design",
-    description: "Jag hjälper dig att ta fram förslag på en passande design."
+    description: "Jag tar fram förslag på en passande design."
   },
   {
     icon: <RxDesktop />,
     title: "Utveckling",
-    description: "Utveckling sker löpande efter noggrann konsul- tation."
+    description: "Utveckling sker löpande med uppföljning."
   },
   {
     icon: <RxReader />,

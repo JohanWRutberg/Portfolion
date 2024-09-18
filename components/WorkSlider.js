@@ -14,7 +14,7 @@ export const workSlider = {
         },
         {
           title: "title",
-          path: "/003.jpg",
+          path: "/thumb3.jpg",
           link: "https://github.com/JohanWRutberg/portfolio"
         },
         {
