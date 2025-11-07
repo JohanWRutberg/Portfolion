@@ -58,24 +58,32 @@ const aboutData = [
     title: "erfarenhet",
     info: [
       {
-        title: "Fullstack utvecklare, Optimental (praktik)",
-        stage: "2024 - 2024"
+        title: "Frontend utvecklare, Svenska Spel",
+        stage: "2025-09 - Nuvarande"
       },
       {
+        title: "Testare, Svenska Spel",
+        stage: "2024-11 - 2025-09"
+      },      
+      {
         title: "Surveillance Analyst, Casino Cosmopol, SvS",
-        stage: "2024 - Idag"
+        stage: "2024-03 - 2024-11"
+      },
+      {
+        title: "Fullstack utvecklare, Optimental (praktik)",
+        stage: "2024-01 - 2024-05"
       },
       {
         title: "Frontend utvecklare, Bildhistoria (praktik)",
-        stage: "2023 - 2023"
+        stage: "2023-08 - 2023-10"
       },
       {
         title: "Surveillance Team Manager, Casino Cosmopol, SvS",
-        stage: "2019 - 2020"
+        stage: "2019-11 - 2020-03"
       },
       {
         title: "Surveillance Officer, Casino Cosmopol, SvS",
-        stage: "2003 - 2024"
+        stage: "2003-08 - 2019-11"
       },
       {
         title: "Testingenjör, Validation",
@@ -149,7 +157,7 @@ const About = () => {
                 after:bg-white/10 after:absolute after:top-0 after:right-0"
               >
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={1} duration={5} /> +
+                  <CountUp start={0} end={2} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">År av erfarenhet</div>
               </div>
@@ -159,7 +167,7 @@ const About = () => {
                 after:bg-white/10 after:absolute after:top-0 after:right-0"
               >
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={4} duration={8} /> +
+                  <CountUp start={0} end={6} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">Nöjda kunder</div>
               </div>
@@ -169,7 +177,7 @@ const About = () => {
                 after:bg-white/10 after:absolute after:top-0 after:right-0"
               >
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={20} duration={8} /> +
+                  <CountUp start={0} end={30} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">Färdiga projekt</div>
               </div>
