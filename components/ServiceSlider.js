@@ -26,7 +26,7 @@ const serviceData = [
   {
     icon: <RxCrop />,
     title: "Varumärke",
-    description: "Jag skapar logotyper som är anpassat för ändamålet."
+    description: "Jag skapar logotyper som är anpassade för ändamålet."
   },
   {
     icon: <RxPencil2 />,
@@ -36,7 +36,7 @@ const serviceData = [
   {
     icon: <RxDesktop />,
     title: "Utveckling",
-    description: "Utveckling sker löpande med täta uppföljnings möten."
+    description: "Utveckling sker löpande med täta uppföljningsmöten."
   },
   {
     icon: <RxReader />,
@@ -46,7 +46,7 @@ const serviceData = [
   {
     icon: <RxRocket />,
     title: "SEO",
-    description: "Jag hjälper dig att hamna högt i sök- resultaten på Google."
+    description: "Jag hjälper dig att hamna högt i sökresultaten på Google."
   }
 ];
 

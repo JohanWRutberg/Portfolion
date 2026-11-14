@@ -123,12 +123,11 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            Juniorutvecklare med både <span className="text-white font-semibold">Frontend</span> och{" "}
-            <span className="text-accent font-semibold">Backend</span> kunskaper. Med passion för att skapa intuitiva
-            och effektiva digitala lösningar, är jag redo att hjälpa dig att förverkliga dina idéer. Oavsett om det
-            handlar om att bygga responsiva webbplatser, utveckla dynamiska webbapplikationer eller optimera
-            användarupplevelsen, kan jag bidra med den tekniska expertis och kreativitet som behövs för att ta ditt
-            projekt till nästa nivå.
+            Frontendutvecklare på Svenska Spel med kunskaper inom både{" "}
+            <span className="text-white font-semibold">frontend</span> och{" "}
+            <span className="text-accent font-semibold">backend</span>. Jag kom in i utvecklingen via test och har
+            sedan dess byggt allt från kundsajter och bloggar till egna tjänster och spel. Jag brinner för att skapa
+            intuitiva och effektiva digitala lösningar – från responsiva webbplatser till dynamiska webbappar.
           </motion.p>
           {/* counters */}
           <motion.div
@@ -145,37 +144,30 @@ const About = () => {
                 after:bg-white/10 after:absolute after:top-0 after:right-0"
               >
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={2} duration={5} /> +
-                </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">År av erfarenhet</div>
-              </div>
-              {/* clients */}
-              <div
-                className="relative flex-1 after:w-px after:h-full
-                after:bg-white/10 after:absolute after:top-0 after:right-0"
-              >
-                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={6} duration={5} /> +
-                </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">Nöjda kunder</div>
-              </div>
-              {/* projects */}
-              <div
-                className="relative flex-1 after:w-px after:h-full
-                after:bg-white/10 after:absolute after:top-0 after:right-0"
-              >
-                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={30} duration={5} /> +
-                </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">Färdiga projekt</div>
-              </div>
-              {/* awards */}
-              {/* <div className="relative flex-1">
-                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                   <CountUp start={0} end={3} duration={5} /> +
                 </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">Winning awards</div>
-              </div> */}
+                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">År som utvecklare</div>
+              </div>
+              {/* live projects */}
+              <div
+                className="relative flex-1 after:w-px after:h-full
+                after:bg-white/10 after:absolute after:top-0 after:right-0"
+              >
+                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
+                  <CountUp start={0} end={8} duration={5} />
+                </div>
+                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">Sajter i drift</div>
+              </div>
+              {/* repos */}
+              <div
+                className="relative flex-1 after:w-px after:h-full
+                after:bg-white/10 after:absolute after:top-0 after:right-0"
+              >
+                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
+                  <CountUp start={0} end={40} duration={5} /> +
+                </div>
+                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">Repon på GitHub</div>
+              </div>
             </div>
           </motion.div>
         </div>

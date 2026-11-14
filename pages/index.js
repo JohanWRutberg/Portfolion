@@ -40,10 +40,8 @@ const Home = () => {
             exit="hidden"
             className="max-W-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 bg-white/10 backdrop-blur-xs auto rounded-3xl p-4"
           >
-            Juniorutvecklare inom{" "}
-            <span className="text-white font-semibold">Javascript</span>. Här du
-            kan utforska mina projekt och se mina tidigare projekt och vad jag
-            gör idag.
+            <span className="text-white font-semibold">Frontendutvecklare</span> på Svenska Spel. Här kan du utforska
+            sajter och appar som jag har byggt i JavaScript, React och Next.js.
           </motion.p>
           {/* Btn */}
           <div className="flex justify-center xl:hidden relative pb-48">
