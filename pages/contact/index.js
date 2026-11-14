@@ -77,7 +77,7 @@ const Contact = () => {
                 placeholder="namn"
                 value={formData.namn}
                 onChange={handleChange}
-                className="input bg-white/10 backdrop-blur-sm"
+                className="input bg-white/10 backdrop-blur-xs"
               />
               <input
                 type="email"
@@ -85,7 +85,7 @@ const Contact = () => {
                 placeholder="e-post"
                 value={formData.email}
                 onChange={handleChange}
-                className="input bg-white/10 backdrop-blur-sm"
+                className="input bg-white/10 backdrop-blur-xs"
               />
             </div>
             <input
@@ -94,14 +94,14 @@ const Contact = () => {
               placeholder="ämne"
               value={formData.amne}
               onChange={handleChange}
-              className="input bg-white/10 backdrop-blur-sm"
+              className="input bg-white/10 backdrop-blur-xs"
             />
             <textarea
               name="meddelande"
               placeholder="meddelande"
               value={formData.meddelande}
               onChange={handleChange}
-              className="textarea bg-white/10 backdrop-blur-sm"
+              className="textarea bg-white/10 backdrop-blur-xs"
             ></textarea>
             <button
               type="submit"
@@ -111,14 +111,14 @@ const Contact = () => {
               overflow-hidden hover:border-accent group z-30 ${!isFormValid() && "opacity-50 cursor-not-allowed"}`}
             >
               <span
-                className="group-hover:-translate-y-[120%] group-hover:opacity-0
+                className="group-hover:translate-y-[-120%] group-hover:opacity-0
                 transition-all duration-500"
               >
                 Let´s talk
               </span>
               <BsArrowRight
-                className="-translate-y-[120%] opacity-0 group-hover:flex
-                group-hover:-translate-y-0 group-hover:opacity-100 transition-all
+                className="translate-y-[-120%] opacity-0 group-hover:flex
+                group-hover:translate-y-0 group-hover:opacity-100 transition-all
                 duration-300 absolute text-[22px]"
               />
             </button>

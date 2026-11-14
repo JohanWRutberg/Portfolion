@@ -106,7 +106,7 @@ const About = () => {
         initial="hidden"
         animate="show"
         exit="hidden"
-        className="hidden xl:flex absolute -bottom-5 -left-[280px] max-w-[600px] max-h-[580px] "
+        className="hidden xl:flex absolute -bottom-5 left-[-280px] max-w-[600px] max-h-[580px] "
       >
         <Avatar />
       </motion.div>
@@ -141,7 +141,7 @@ const About = () => {
             <div className="flex flex-1 xl:gap-x-6 z-0">
               {/* experience */}
               <div
-                className="relative flex-1 after:w-[1px] after:h-full
+                className="relative flex-1 after:w-px after:h-full
                 after:bg-white/10 after:absolute after:top-0 after:right-0"
               >
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
@@ -151,7 +151,7 @@ const About = () => {
               </div>
               {/* clients */}
               <div
-                className="relative flex-1 after:w-[1px] after:h-full
+                className="relative flex-1 after:w-px after:h-full
                 after:bg-white/10 after:absolute after:top-0 after:right-0"
               >
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
@@ -161,7 +161,7 @@ const About = () => {
               </div>
               {/* projects */}
               <div
-                className="relative flex-1 after:w-[1px] after:h-full
+                className="relative flex-1 after:w-px after:h-full
                 after:bg-white/10 after:absolute after:top-0 after:right-0"
               >
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
@@ -188,7 +188,7 @@ const About = () => {
                   key={itemIndex}
                   className={`${
                     index === itemIndex &&
-                    "text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300"
+                    "text-accent after:w-full after:bg-accent after:transition-all after:duration-300"
                   } cursor-pointer capitalize xl:text-lg relative after:w-8
                   after:h-[2px] after:bg-white after:absolute after:-bottom-1
                   after:left-0`}

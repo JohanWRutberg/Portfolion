@@ -88,7 +88,7 @@ const slides = Array.from({ length: Math.ceil(projects.length / PER_SLIDE) }, (_
 
 const ProjectCard = ({ project }) => {
   return (
-    <div className="relative aspect-[5/3] rounded-lg overflow-hidden group bg-secondary">
+    <div className="relative aspect-5/3 rounded-lg overflow-hidden group bg-secondary">
       {/* screenshot */}
       <Image
         src={project.image}
@@ -99,7 +99,7 @@ const ProjectCard = ({ project }) => {
       />
 
       {/* gradient: light at rest, darker on hover */}
-      <div className="absolute inset-0 bg-gradient-to-t from-primary from-15% via-primary/70 via-40% to-transparent to-70% group-hover:via-primary/90 group-hover:to-primary/60 transition-all duration-500"></div>
+      <div className="absolute inset-0 bg-linear-to-t from-primary from-15% via-primary/70 via-40% to-transparent to-70% group-hover:via-primary/90 group-hover:to-primary/60 transition-all duration-500"></div>
 
       {/* link to the live site covers the whole card */}
       <a
@@ -118,7 +118,7 @@ const ProjectCard = ({ project }) => {
           rel="noopener noreferrer"
           aria-label={`Källkod för ${project.title} på GitHub`}
           title="Källkod på GitHub"
-          className="absolute top-2 right-2 z-20 w-8 h-8 flex items-center justify-center rounded-full bg-primary/70 backdrop-blur-sm text-lg hover:bg-accent transition-all duration-300"
+          className="absolute top-2 right-2 z-20 w-8 h-8 flex items-center justify-center rounded-full bg-primary/70 backdrop-blur-xs text-lg hover:bg-accent transition-all duration-300"
         >
           <RiGithubLine />
         </a>
