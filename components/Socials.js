@@ -2,14 +2,7 @@
 import Link from "next/link";
 
 // icons
-import {
-  RiGithubLine,
-  RiInstagramLine,
-  RiTwitterXLine,
-  RiFacebookLine,
-  RiLinkedinLine,
-  RiDiscordLine
-} from "react-icons/ri";
+import { RiGithubLine, RiInstagramLine, RiLinkedinLine } from "react-icons/ri";
 
 const Socials = () => {
   return (
@@ -17,32 +10,26 @@ const Socials = () => {
       <Link
         href={"https://github.com/JohanWRutberg"}
         target="_blank"
+        rel="noopener noreferrer"
         className="hover:text-accent transition-all duration-300"
       >
         <RiGithubLine />
       </Link>
       <Link
-        href={"http://linkedin.com/in/johan-rutberg-a0a093160"}
+        href={"https://www.linkedin.com/in/johan-rutberg-a0a093160"}
         target="_blank"
+        rel="noopener noreferrer"
         className="hover:text-accent transition-all duration-300"
       >
         <RiLinkedinLine />
       </Link>
-      {/* <Link href={""} className="hover:text-accent transition-all duration-300">
-        <RiTwitterXLine />
-      </Link> */}
       <Link
         href={"https://www.instagram.com/johansquaremountain/"}
         target="_blank"
+        rel="noopener noreferrer"
         className="hover:text-accent transition-all duration-300"
       >
         <RiInstagramLine />
-      </Link>
-      {/* <Link href={""} className="hover:text-accent transition-all duration-300">
-        <RiFacebookLine />
-      </Link> */}
-      <Link href={""} className="hover:text-accent transition-all duration-300">
-        <RiDiscordLine />
       </Link>
     </div>
   );

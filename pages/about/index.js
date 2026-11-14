@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 // components
 import Avatar from "../../components/Avatar";
-import Circles from "../../components/Circles";
 
 // framer motion
 import { motion } from "framer-motion";
@@ -12,9 +11,9 @@ import CountUp from "react-countup";
 // icons
 import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaVuejs } from "react-icons/fa";
 
-import { SiNextdotjs, SiNodedotjs, SiFramer, SiAdobexd, SiAdobephotoshop } from "react-icons/si";
+import { SiNextdotjs, SiNodedotjs, SiFramer } from "react-icons/si";
 
-import { TbBrandFramerMotion } from "react-icons/tb";
+import { TbBrandFramerMotion, TbBrandAdobeXd, TbBrandAdobePhotoshop } from "react-icons/tb";
 
 //  data
 const aboutData = [
@@ -23,21 +22,11 @@ const aboutData = [
     info: [
       {
         title: "Webbutv.",
-        icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <SiFramer />,
-          <FaVuejs />,
-          <SiNodedotjs />,
-          <TbBrandFramerMotion />
-        ]
+        icons: [FaHtml5, FaCss3, FaJs, FaReact, SiNextdotjs, SiFramer, FaVuejs, SiNodedotjs, TbBrandFramerMotion]
       },
       {
         title: "UX / UI",
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />]
+        icons: [FaFigma, TbBrandAdobeXd, TbBrandAdobePhotoshop]
       }
     ]
   },
@@ -111,14 +100,13 @@ const About = () => {
   /* console.log(index); */
   return (
     <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
-      {/*  <Circles /> */}
       {/* avatar img */}
       <motion.div
         variants={fadeIn("right", 0.2)}
         initial="hidden"
         animate="show"
         exit="hidden"
-        className="hidden xl:flex absolute -bottom-5 -left-[280px] max-w-[600px] max-h-[580px] "
+        className="hidden xl:flex absolute -bottom-5 left-[-280px] max-w-[600px] max-h-[580px] "
       >
         <Avatar />
       </motion.div>
@@ -153,7 +141,7 @@ const About = () => {
             <div className="flex flex-1 xl:gap-x-6 z-0">
               {/* experience */}
               <div
-                className="relative flex-1 after:w-[1px] after:h-full
+                className="relative flex-1 after:w-px after:h-full
                 after:bg-white/10 after:absolute after:top-0 after:right-0"
               >
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
@@ -163,7 +151,7 @@ const About = () => {
               </div>
               {/* clients */}
               <div
-                className="relative flex-1 after:w-[1px] after:h-full
+                className="relative flex-1 after:w-px after:h-full
                 after:bg-white/10 after:absolute after:top-0 after:right-0"
               >
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
@@ -173,7 +161,7 @@ const About = () => {
               </div>
               {/* projects */}
               <div
-                className="relative flex-1 after:w-[1px] after:h-full
+                className="relative flex-1 after:w-px after:h-full
                 after:bg-white/10 after:absolute after:top-0 after:right-0"
               >
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
@@ -200,7 +188,7 @@ const About = () => {
                   key={itemIndex}
                   className={`${
                     index === itemIndex &&
-                    "text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300"
+                    "text-accent after:w-full after:bg-accent after:transition-all after:duration-300"
                   } cursor-pointer capitalize xl:text-lg relative after:w-8
                   after:h-[2px] after:bg-white after:absolute after:-bottom-1
                   after:left-0`}
@@ -225,10 +213,11 @@ const About = () => {
                   <div>{item.title}</div>
                   <div className="flex gap-x-4">
                     {/* icons */}
-                    {item.icons?.map((icon, itemIndex) => {
-                      // eslint-disable-next-line react/jsx-key
-                      return <div className="text-4xl text-white">{icon}</div>;
-                    })}
+                    {item.icons?.map((Icon, iconIndex) => (
+                      <div className="text-4xl text-white" key={iconIndex}>
+                        <Icon />
+                      </div>
+                    ))}
                   </div>
                 </div>
               );

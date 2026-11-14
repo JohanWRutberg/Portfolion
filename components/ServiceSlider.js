@@ -19,7 +19,7 @@ import {
 } from "react-icons/rx";
 
 // import required modules
-import { FreeMode, Pagination } from "swiper";
+import { FreeMode, Pagination } from "swiper/modules";
 
 // data
 const serviceData = [

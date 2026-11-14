@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <div className="bg-primary/60 h-full">
       {/* text */}
-      <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
+      <div className="w-full h-full bg-linear-to-r from-primary/10 via-black/30 to-black/10">
         <div
           className="text-center flex flex-col justify-center pt-72 md:pt-48 xl:pt-40 xl:text-left xl:ml-24
         h-full container mx-auto"
@@ -27,7 +27,7 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h1 max-w-sm md:max-w-2xl xl:max-w-2xl mx-auto xl:mx-0 mb-10 xl:mb-16 bg-white/10 backdrop-blur-sm auto rounded-3xl p-4"
+            className="h1 max-w-sm md:max-w-2xl xl:max-w-2xl mx-auto xl:mx-0 mb-10 xl:mb-16 bg-white/10 backdrop-blur-xs auto rounded-3xl p-4"
           >
             Förvandlar idéer till{" "}
             <span className="text-accent">Digitala Lösningar</span>
@@ -38,7 +38,7 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-W-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 bg-white/10 backdrop-blur-sm auto rounded-3xl p-4"
+            className="max-W-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 bg-white/10 backdrop-blur-xs auto rounded-3xl p-4"
           >
             Juniorutvecklare inom{" "}
             <span className="text-white font-semibold">Javascript</span>. Här du
