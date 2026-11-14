@@ -14,7 +14,8 @@ const Header = () => {
         <div className="flex flex-col lg:flex-row justify-between items-center gap-y-6 py-8 z-50">
           {/* logo */}
           <Link href={"/"}>
-            <Image src={"/logo.png"} width={200} height={48} alt="" priority={true} />
+            {/* logo.png is 9904×1280, so 200 wide is ~26 high */}
+            <Image src={"/logo.png"} width={200} height={26} alt="Johan Rutberg" priority={true} />
           </Link>
           {/* socials */}
           <Socials />
