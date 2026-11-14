@@ -31,7 +31,8 @@ const Work = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Ett urval av projekt som jag har satt ihop.
+              Ett urval av sidor och appar som jag har byggt och som är i drift idag. Klicka på ett projekt för att
+              besöka sidan.
             </motion.p>
           </div>
           {/* slider */}
